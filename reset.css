@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900,700");
+
+:root {
+    --white: rgb(255, 255, 255);
+    --black: rgba(0,0,0,1);
+    --shark: rgba(37,37,37,1);
+    --green-caracter: #33A8DB80;
+    --green-secund: #33A8DB;
+
+
+    --font-size-m: 1rem;
+    --font-size-ml: 1.5rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 2.5rem;
+
+    --font-family-raleway: "Raleway";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+}
