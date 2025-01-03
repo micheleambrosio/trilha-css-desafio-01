@@ -5,16 +5,167 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+  * {font-family: 'Raleway', sans-serif;
+    margin: 0 auto;}
+
+    body {background-color: black;}
+
+  /* 1° Quadro */
+
+  header {height: 605px;
+  border-bottom: 1px solid rgba(51, 168, 219, 1);
+  background-image: linear-gradient(rgba(8, 58, 80, 0.1), rgba(28, 135, 216, 0.2), rgba(7, 53, 73, 0.1)), url('../trilha-css-desafio-01/assets/images/banner.png');
+  text-align: center;}
+
+  .banner-content {margin: auto;
+  width: 450px;}
+
+  .logo img {
+  width: 280px;
+  margin-top: 56px}
+
+  .banner h1 {color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 35px;
+  background: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+  background-clip: text;
+  -webkit-background-clip: text;}
+
+  .banner p {color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  margin-top: 18px;
+  font-size: 16px;}
+
+  button {width: 326px;
+  height: 57px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color: rgba(49, 168, 221, 1);
+  border: 2px solid;
+  padding: 19px;
+  margin-top: 28px;
+  background-color: transparent;
+  border-color: linear-gradient(rgba(59, 161, 205, 1), rgba(21, 114, 183, 1));}
+
+  /* 2° Quadro */
+
+  main {height: 1500px;}
+
+  #course-content {height: 400px;
+  margin-top:80px;
+  margin-bottom: 40px;}
+
+  #course-content h2 {
+  text-align: center;
+  height: 38px;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(51, 168, 219, 1);
+  text-transform: uppercase;
+  margin-bottom: 30px;}
+
+  #course-content p {font-weight: 400;
+  font-size: 16px;
+  color: white;
+  width: 800px;
+  margin-bottom: 40px;}
+
+  .module {color: white;
+  text-align: center;
+  font-weight: 400;
+  border: 1px solid rgba(51, 168, 219, 1);
+  border-radius: 100px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 16px;
+  background-color: rgb(34, 34, 34);
+  box-shadow: inset -3px 3px 4px 1px rgb(0, 0, 0);}
+
+  .module span {color: rgba(51, 168, 219, 1);}
+  
+  /* 3° Quadro */
+  
+  #transform-world {
+  height: 300px;
+  border-top: 1px solid rgba(51, 168, 219, 1);
+  border-bottom: 1px solid rgba(51, 168, 219, 1);
+  background-image: url('../trilha-css-desafio-01/assets/images/woman-code.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-attachment: fixed;}
+
+  #transform-world p {width: 220px;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px rgba(51, 168, 219, 1);
+  padding: 100px;}
+
+  /* 4° Quadro */
+
+  #professional-challenges {padding: 100px;
+  margin-top: -20px;
+  text-align: center;}
+
+  #professional-challenges h2 {width:746px;;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: rgba(51, 168, 219, 1);}
+
+  #professional-challenges img {
+  width: 659px;
+  margin: 20px;}
+
+  #professional-challenges p {width: 792px;
+  height: 76px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);}
+
+  /* Último Quadro */
+
+  footer {height: 170px;
+  text-align: center;
+  border: 1px solid rgba(51, 168, 219, 1);
+  background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1),rgb(1, 38, 53));}
+
+  .dio-logo {
+  width: 310px;
+  height: 44px;
+  margin-top: 59px;}
+
+  footer p {width: 259px;
+  height: 19px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 15px;
+  color: white;}
+
+  footer a {font-family: 'Raleway700', sans-serif;}
+
+  </style>
 </head>
 <body>
   <header class="banner">
     <div class="banner-content">
       <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+        <img src="../trilha-css-desafio-01/assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
       <h1>Trilha de CSS da DIO</h1>
       <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
+      <a href="https://dio.me"><button>Quero me inscrever</button></a>
     </div>
   </header>
   <main>
@@ -41,7 +192,7 @@
     </section>
     <section id="professional-challenges">
       <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <img src="../trilha-css-desafio-01/assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
       <p>
         Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
@@ -51,7 +202,7 @@
     </section>
   </main>
   <footer>
-    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <img class="dio-logo" src="../trilha-css-desafio-01/assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
     <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
   </footer>
 </body>
